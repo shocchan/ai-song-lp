@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>しょっちゃんのAIオリジナルソング｜¥500で世界にひとつの曲</title>
+<meta name="description" content="結婚式、誕生日、自分への応援歌。世界にひとつのオリジナルソングを¥500で制作します。3〜5日でメール納品。">
+<meta property="og:title" content="しょっちゃんのAIオリジナルソング｜¥500で世界にひとつの曲">
+<meta property="og:description" content="結婚式、誕生日、自分への応援歌。世界にひとつのオリジナルソングを¥500で制作します。">
+<meta property="og:type" content="website">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+    line-height: 1.8;
+    color: #2c2c2c;
+    background: linear-gradient(135deg, #fff5f7 0%, #fef0e6 100%);
+  }
+  .hero {
+    text-align: center;
+    padding: 80px 24px 60px;
+    background: linear-gradient(135deg, #ffc8d0 0%, #ffe4b5 100%);
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+    color: #d04a6b;
+    line-height: 1.4;
+  }
+  .hero .price {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #d04a6b;
+    margin: 16px 0;
+  }
+  .hero p.subtitle {
+    font-size: 1.1rem;
+    color: #5a3a3a;
+    max-width: 600px;
+    margin: 0 auto 24px;
+  }
+  .hero .cta-button {
+    display: inline-block;
+    background: #d04a6b;
+    color: white;
+    padding: 18px 48px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(208, 74, 107, 0.3);
+    transition: transform 0.2s;
+  }
+  .hero .cta-button:hover { transform: translateY(-2px); }
+  .section {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px;
+  }
+  .section h2 {
+    font-size: 1.8rem;
+    color: #d04a6b;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .use-case {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .use-case .icon { font-size: 2.5rem; display: block; margin-bottom: 8px; }
+  .use-case .label { font-weight: 600; color: #5a3a3a; }
+  .steps {
+    display: grid;
+    gap: 20px;
+  }
+  .step {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .step-number {
+    background: #d04a6b;
+    color: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+  }
+  .step-content h3 { font-size: 1.2rem; color: #2c2c2c; margin-bottom: 4px; }
+  .step-content p { font-size: 0.95rem; color: #666; }
+  .payment-section {
+    background: white;
+    padding: 40px 24px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(208, 74, 107, 0.15);
+  }
+  .payment-section h2 { margin-bottom: 16px; }
+  .qr-container {
+    background: #fef8f9;
+    padding: 24px;
+    border-radius: 12px;
+    margin: 24px 0;
+    display: inline-block;
+  }
+  .qr-placeholder {
+    width: 220px;
+    height: 220px;
+    background: #f5d7dc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 12px;
+    color: #d04a6b;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+  }
+  .payment-instructions {
+    background: #fef8f9;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+    margin: 16px 0;
+  }
+  .payment-instructions ol { margin-left: 20px; }
+  .payment-instructions li { margin: 8px 0; }
+  .form-button {
+    display: inline-block;
+    background: #4a7fd0;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 16px;
+    box-shadow: 0 4px 12px rgba(74, 127, 208, 0.3);
+  }
+  .faq-item {
+    background: white;
+    padding: 20px 24px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .faq-item h4 { color: #d04a6b; margin-bottom: 8px; font-size: 1.05rem; }
+  .faq-item p { font-size: 0.95rem; color: #444; }
+  .social-proof {
+    background: #fff;
+    padding: 32px 24px;
+    border-radius: 16px;
+    margin: 24px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .social-proof .review {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0e8ea;
+  }
+  .social-proof .review:last-child { border-bottom: none; }
+  .stars { color: #ffb547; margin-bottom: 4px; }
+  .reviewer { font-size: 0.85rem; color: #888; margin-top: 6px; }
+  footer {
+    text-align: center;
+    padding: 40px 24px;
+    background: #f5e6e8;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  footer a { color: #d04a6b; }
+  .sns-links {
+    margin: 16px 0;
+  }
+  .sns-links a {
+    display: inline-block;
+    margin: 0 12px;
+    color: #d04a6b;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 1.7rem; }
+    .hero .price { font-size: 2.8rem; }
+    .section h2 { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <h1>世界にひとつの<br>オリジナルソングを、<br>あなたへ🎵</h1>
+  <p class="subtitle">結婚式、誕生日、自分への応援歌。<br>大切な想いを、3〜5日で楽曲にしてお届けします。</p>
+  <div class="price">¥500〜</div>
+  <p style="color: #5a3a3a; font-size: 0.95rem;">MP3ファイル＋歌詞カード付き／オプション追加可</p>
+  <a href="#payment" class="cta-button">今すぐ制作を依頼する</a>
+</section>
+
+<section class="section">
+  <h2>💰 料金プラン</h2>
+  <div style="background: white; padding: 28px 24px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 20px;">
+    <div style="text-align: center; padding-bottom: 20px; border-bottom: 2px dashed #f0d7dc;">
+      <div style="font-size: 0.9rem; color: #888; margin-bottom: 4px;">ベース料金</div>
+      <div style="font-size: 2.4rem; font-weight: 700; color: #d04a6b;">¥500</div>
+      <div style="font-size: 0.85rem; color: #666; margin-top: 4px;">選択式回答＋曲名＋キーワードで完成</div>
+    </div>
+    <div style="padding-top: 20px;">
+      <div style="font-weight: 600; color: #5a3a3a; margin-bottom: 12px; text-align: center;">✨ 基本オプション（任意・各+¥500）</div>
+      <ul style="list-style: none; padding: 0; display: grid; gap: 10px; margin-bottom: 24px;">
+        <li style="padding: 10px 14px; background: #fef8f9; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;"><span>🔁 修正対応（1回分）</span><span style="color: #d04a6b; font-weight: 600;">+¥500</span></li>
+        <li style="padding: 10px 14px; background: #fef8f9; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;"><span>🖼️ 指定画像を歌詞カードに入れる</span><span style="color: #d04a6b; font-weight: 600;">+¥500</span></li>
+        <li style="padding: 10px 14px; background: #fef8f9; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;"><span>⚡ 特急納品（48時間以内）</span><span style="color: #d04a6b; font-weight: 600;">+¥500</span></li>
+        <li style="padding: 10px 14px; background: #fef8f9; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;"><span>📜 高級PDFデザインの歌詞カード</span><span style="color: #d04a6b; font-weight: 600;">+¥500</span></li>
+      </ul>
+
+      <div style="font-weight: 600; color: #5a3a3a; margin-bottom: 12px; text-align: center;">🎬 MVオプション（1つだけ選択）</div>
+      <ul style="list-style: none; padding: 0; display: grid; gap: 10px;">
+        <li style="padding: 10px 14px; background: #fff4f6; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;"><span>📷 静止画MV（画像1〜3枚＋歌詞表示）</span><span style="color: #d04a6b; font-weight: 600;">+¥500</span></li>
+        <li style="padding: 10px 14px; background: #fff4f6; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;"><span>🎞️ スライドショーMV（AI画像5〜10枚切替）</span><span style="color: #d04a6b; font-weight: 600;">+¥1,000</span></li>
+        <li style="padding: 10px 14px; background: #fff4f6; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;"><span>✍️ リリックビデオ（歌詞アニメ・KポップMV風）</span><span style="color: #d04a6b; font-weight: 600;">+¥1,000</span></li>
+        <li style="padding: 10px 14px; background: #fff4f6; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;"><span>🎬 AI動画MV（Runway/Sora等の動く映像）</span><span style="color: #d04a6b; font-weight: 600;">+¥2,000</span></li>
+      </ul>
+      <p style="margin-top: 14px; font-size: 0.82rem; color: #888; text-align: center; line-height: 1.6;">
+        ※ 指定キャラ・人物を登場させたい場合はフォームで参考画像アップロード可能<br>
+        ※ 選択した合計金額をPayPay送金してください（例：修正+スライドショーMV＝¥2,000）
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>💝 こんなシーンで使われています</h2>
+  <div class="use-cases">
+    <div class="use-case"><span class="icon">💒</span><span class="label">結婚式のBGM</span></div>
+    <div class="use-case"><span class="icon">🎂</span><span class="label">誕生日の<br>サプライズ</span></div>
+    <div class="use-case"><span class="icon">🐶</span><span class="label">ペットの<br>記念ソング</span></div>
+    <div class="use-case"><span class="icon">🎓</span><span class="label">卒業・送別会</span></div>
+    <div class="use-case"><span class="icon">💪</span><span class="label">自分への<br>応援歌</span></div>
+    <div class="use-case"><span class="icon">🏪</span><span class="label">お店の<br>テーマ曲</span></div>
+    <div class="use-case"><span class="icon">📱</span><span class="label">SNS用BGM</span></div>
+    <div class="use-case"><span class="icon">💍</span><span class="label">プロポーズ</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>🎵 制作の流れ（3ステップ）</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-number">1</div>
+      <div class="step-content">
+        <h3>オプションを決めて、PayPayで送金</h3>
+        <p>ベース¥500＋オプション数×¥500を下記QRから送金してください（例：オプション2つ＝¥1,500）。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-number">2</div>
+      <div class="step-content">
+        <h3>ヒアリングフォームに回答（3分）</h3>
+        <p>送金完了画面のスクショを撮影し、ページ下部のフォームに添付して回答してください。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-number">3</div>
+      <div class="step-content">
+        <h3>3〜5日でメール納品</h3>
+        <p>完成版のMP3と歌詞カード（PDF）を、フォームにご入力いただいたメールアドレスへお届けします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="payment">
+  <div class="payment-section">
+    <h2>💰 今すぐ依頼する</h2>
+    <p>以下の2ステップでご依頼いただけます</p>
+
+    <div class="qr-container">
+      <h3 style="color: #d04a6b; margin-bottom: 16px;">STEP 1｜金額を決めてPayPay送金</h3>
+      <div class="qr-placeholder">
+        [PayPay QRコードをここに貼り付け]
+      </div>
+      <p style="margin-top: 12px; font-size: 0.9rem;">ベース¥500＋オプション数×¥500を送金<br>（例：オプション2つ＝¥1,500）</p>
+    </div>
+
+    <div class="payment-instructions">
+      <h3 style="color: #d04a6b; margin-bottom: 12px;">STEP 2｜フォーム入力</h3>
+      <ol>
+        <li>送金完了画面をスクリーンショット</li>
+        <li>下のボタンからフォームを開く</li>
+        <li>フォーム内「支払い証明」欄にスクショを添付</li>
+        <li>その他の項目を回答して送信</li>
+      </ol>
+    </div>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeql357k4L0ECwYCmH2KAifBwB3Y6xh5eYb-TL8hRdzh4EZpw/viewform" class="form-button" target="_blank">▶ ヒアリングフォームを開く</a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>⭐️ お客様の声</h2>
+  <div class="social-proof">
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>結婚式の新婦入場で使わせていただきました。一生の宝物になる曲をありがとうございます！</p>
+      <div class="reviewer">— 30代女性・東京都</div>
+    </div>
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>副業で会社を辞めた自分への応援歌をお願いしました。毎朝通勤前に聴いて元気をもらっています。</p>
+      <div class="reviewer">— 40代男性・大阪府</div>
+    </div>
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>亡くなった愛犬への追悼ソング、家族全員で泣きました。毎年命日に聴きます。</p>
+      <div class="reviewer">— 50代女性・福岡県</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>🤔 よくあるご質問</h2>
+  <div class="faq-item">
+    <h4>Q. どんなジャンルに対応してる？</h4>
+    <p>J-POP、バラード、ロック、R&B、EDM、アコースティック、C-POP（中国語）、K-POP風など幅広く対応します。フォームから選択できます。</p>
+  </div>
+  <div class="faq-item">
+    <h4>Q. 納期は？</h4>
+    <p>3〜5営業日でメール納品します。お急ぎの方は別途ご相談ください。</p>
+  </div>
+  <div class="faq-item">
+    <h4>Q. 修正はできる？</h4>
+    <p>修正対応はオプション（+¥500）でお受けしています。ご依頼時にオプションをご選択ください。</p>
+  </div>
+  <div class="faq-item">
+    <h4>Q. 商用利用はできる？</h4>
+    <p>個人利用は自由です。商用利用（広告・販売など）は別途ご相談ください。</p>
+  </div>
+  <div class="faq-item">
+    <h4>Q. 「AI」を使ってる？</h4>
+    <p>はい。AI作曲技術を活用することで¥500という価格を実現しています。歌詞・構成・方向性は人間（しょっちゃん）が責任を持って制作します。</p>
+  </div>
+</section>
+
+<footer>
+  <p>🎵 しょっちゃんのAIオリジナルソング</p>
+  <div class="sns-links">
+    <a href="https://x.com/shocchan_tuber" target="_blank">X (@shocchan_tuber)</a>
+    <a href="https://note.com/shocchan" target="_blank">note</a>
+  </div>
+  <p style="margin-top: 16px;">© 2026 しょっちゃん. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
